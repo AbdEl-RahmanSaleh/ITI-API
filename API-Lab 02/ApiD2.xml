@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>API-Lab 02</name>
+    </assembly>
+    <members>
+        <member name="M:API_Lab_02.Controllers.StudentsController.GetAllStudents">
+            <summary>
+            Function To Get All Studnets
+            </summary>
+            <returns>
+            404 if No students Found
+            200+ Student Exists 
+            </returns>
+        </member>
+        <member name="M:API_Lab_02.Controllers.StudentsController.GetStudentById(System.Int32)">
+            <summary>
+            Function To Get Studnet By Id
+            </summary>
+            <param name="id">Student Id</param>
+            <returns>
+            404 if no student found
+            200+ student if student exists
+            </returns>
+            <remarks>
+            Request Example
+            /api/students/2
+            </remarks>
+        </member>
+        <member name="M:API_Lab_02.Controllers.StudentsController.AddStudent(API_Lab_02.DTOs.StudentDto.StudentDto)">
+            <summary>
+            Function To Add New Student
+            </summary>
+            <param name="studentDto">Student Data</param>
+            <returns>
+            400 Something Went Wrong
+            200+ student Added Successfully
+            </returns>
+        </member>
+        <member name="M:API_Lab_02.Controllers.StudentsController.EditStudent(System.Int32,API_Lab_02.DTOs.StudentDto.StudentDto)">
+            <summary>
+            Function To Edit Student
+            </summary>
+            <param name="id">Student Id</param>
+            <param name="studentDto">Student New Data</param>
+            <returns>
+            404 Student Doesn't Exists
+            200+ student Updated Successfully
+            </returns>
+        </member>
+        <member name="M:API_Lab_02.Controllers.StudentsController.DeleteStudent(System.Int32)">
+            <summary>
+            Function To Delete Student
+            </summary>
+            <param name="id">Student Id</param>
+            <returns>
+            404 Student Doesn't Exists
+            200+ student Deleted Successfully
+            </returns>
+        </member>
+        <member name="M:API_Lab_02.Controllers.StudentsController.SearchStudents(System.String)">
+            <summary>
+            funcion To return a specific student with the name
+            </summary>
+            <param name="name">Student Name</param>
+            <returns>
+            404 if No students Found
+            200+ Student Exists 
+            </returns>
+        </member>
+        <member name="M:API_Lab_02.Controllers.StudentsController.GetStudentsPagination(System.Int32,System.Int32)">
+            <summary>
+            Function that creat pagination
+            </summary>
+            <param name="Page">Page Index</param>
+            <param name="PageSize">Number Of Element</param>
+            <returns>
+            200+ Student Exists 
+            404 if No students Found
+            </returns>
+        </member>
+        <member name="T:API_Lab_02.Migrations.InitMigration">
+            <inheritdoc />
+        </member>
+        <member name="M:API_Lab_02.Migrations.InitMigration.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:API_Lab_02.Migrations.InitMigration.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:API_Lab_02.Migrations.InitMigration.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:API_Lab_02.Migrations.addCapacityToDepartmentTable">
+            <inheritdoc />
+        </member>
+        <member name="M:API_Lab_02.Migrations.addCapacityToDepartmentTable.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:API_Lab_02.Migrations.addCapacityToDepartmentTable.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:API_Lab_02.Migrations.addCapacityToDepartmentTable.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:API_Lab_02.Migrations.removeExras">
+            <inheritdoc />
+        </member>
+        <member name="M:API_Lab_02.Migrations.removeExras.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:API_Lab_02.Migrations.removeExras.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:API_Lab_02.Migrations.removeExras.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:API_Lab_02.Migrations.AllowNullDept_SupervisorIdAndIns_DepartmentId">
+            <inheritdoc />
+        </member>
+        <member name="M:API_Lab_02.Migrations.AllowNullDept_SupervisorIdAndIns_DepartmentId.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:API_Lab_02.Migrations.AllowNullDept_SupervisorIdAndIns_DepartmentId.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:API_Lab_02.Migrations.AllowNullDept_SupervisorIdAndIns_DepartmentId.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
